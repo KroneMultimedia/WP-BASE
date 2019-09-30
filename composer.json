@@ -1,0 +1,31 @@
+{
+	"name": "krn/backend",
+	"type": "project",
+	"authors": [
+		{
+			"name": "KMM",
+			"email": "dev@kmm.at"
+		}
+	],
+	"minimum-stability": "stable",
+	"repositories": [
+	],
+	"require": {
+		"blackfire/php-sdk": "^1.6",
+    "monolog/monolog": "^1.23",
+    "10up/elasticpress": "=2.8.2"
+	},
+	"extra": {
+		"installer-paths": {
+			"wp-content/mu-plugins/includes/{$name}": ["type:wordpress-muplugin"],
+			"wp-content/plugins/{$name}/": ["type:wordpress-plugin"]
+		}
+	},
+	"config": {
+		"github-protocols": ["https"],
+    "discard-changes": true
+	},
+	"require-dev": {
+		"php-mock/php-mock": "^2.0"
+	}
+}
