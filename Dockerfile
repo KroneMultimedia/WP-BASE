@@ -2,7 +2,7 @@ ARG CI_COMMIT_REF_NAME=master
 FROM php:7.3-apache-stretch
 
 # @KRN we use a custom base image - with all the goods for apache and co. - based on php:....
-#FROM gitlab.krone.at:5000/krn/docker_base:$CI_COMMIT_REF_NAME
+#FROM registry.krone.at/krn/docker_base:$CI_COMMIT_REF_NAME
 
 ARG FORCE_COMPOSER_UPDATE=no
 ARG CI_COMMIT_REF_NAME
